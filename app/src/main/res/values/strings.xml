@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Alura Viagens</string>
+    <string name="app_name">MIM: Alura Trips</string>
+    <string name="header_list_trips_activity">Specials</string>
 </resources>
