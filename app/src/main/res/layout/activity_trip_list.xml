@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.TripListActivity">
 
+    <ImageView
+        android:id="@+id/img_banner_list_trips_activity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/banner_height"
+        android:background="@android:color/holo_purple"
+        android:contentDescription="@string/banner_background_image_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txt_header_list_trips_activity"
         android:layout_width="wrap_content"
@@ -13,7 +23,30 @@
         android:layout_marginStart="@dimen/margin_large"
         android:layout_marginTop="@dimen/margin_large"
         android:text="@string/header_list_trips_activity"
-        android:textSize="@dimen/text_large"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_extra_large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_subtitle_list_trips_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/brazil"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_header_list_trips_activity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_header_list_trips_activity" />
+
+    <ListView
+        android:id="@+id/ltv_trips"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_banner_list_trips_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

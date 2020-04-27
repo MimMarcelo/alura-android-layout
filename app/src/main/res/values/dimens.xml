@@ -2,5 +2,7 @@
 <resources>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_large">24dp</dimen>
-    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_extra_large">24sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="banner_height">120dp</dimen>
 </resources>
