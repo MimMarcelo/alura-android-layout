@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_banner_trip"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/banner_item_trip_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/content_description_image_city"
+        android:src="@drawable/sao_paulo_sp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txt_city_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/padding_small"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_large"
+        android:text="@string/city_sao_paulo"
+        app:layout_constraintStart_toStartOf="@id/img_banner_trip"
+        app:layout_constraintBottom_toBottomOf="@id/img_banner_trip"/>
+
+    <view
+        android:id="@+id/view_divisor"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_banner_trip"/>
+
+    <TextView
+        android:id="@+id/txt_trip_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        android:text="@string/trip_days"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divisor"/>
+
+    <TextView
+        android:id="@+id/txt_trip_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_extra_large"
+        android:textColor="@android:color/holo_green_light"
+        android:text="@string/trip_price"
+        app:layout_constraintStart_toStartOf="@id/txt_trip_days"
+        app:layout_constraintTop_toBottomOf="@id/txt_trip_days"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

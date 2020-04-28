@@ -4,5 +4,7 @@
     <dimen name="margin_large">24dp</dimen>
     <dimen name="text_extra_large">24sp</dimen>
     <dimen name="text_large">18sp</dimen>
-    <dimen name="banner_height">120dp</dimen>
+    <dimen name="banner_list_trips_height">120dp</dimen>
+    <dimen name="banner_item_trip_height">100dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
 </resources>

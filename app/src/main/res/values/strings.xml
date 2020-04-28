@@ -3,4 +3,8 @@
     <string name="header_list_trips_activity">Specials</string>
     <string name="brazil">Brazil</string>
     <string name="banner_background_image_description">Banner background image</string>
+    <string name="city_sao_paulo">São Paulo</string>
+    <string name="content_description_image_city">Image from São Paulo/BR city</string>
+    <string name="trip_days">2 days</string>
+    <string name="trip_price">R$ 233.99</string>
 </resources>

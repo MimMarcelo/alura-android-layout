@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/img_banner_list_trips_activity"
         android:layout_width="0dp"
-        android:layout_height="@dimen/banner_height"
+        android:layout_height="@dimen/banner_list_trips_height"
         android:background="@android:color/holo_purple"
         android:contentDescription="@string/banner_background_image_description"
         app:layout_constraintEnd_toEndOf="parent"
