@@ -8,4 +8,8 @@
     <string name="trip_days">2 days</string>
     <string name="trip_price">R$ 233.99</string>
     <string name="trip_list_header">Trips</string>
+    <string name="header_of_resume_activity">Trip Resume</string>
+    <string name="illustrative_image_from_city">Illustrative image from city</string>
+    <string name="final_price">Final price:</string>
+    <string name="btn_make_payment">Make Payment</string>
 </resources>

@@ -3,14 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.activity.TripResumeActivity">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/img_banner_trip"
         android:layout_width="0dp"
         android:layout_height="140dp"
-        android:contentDescription="Illustrative image from city"
+        android:contentDescription="@string/illustrative_image_from_city"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,11 +17,10 @@
         tools:srcCompat="@drawable/sao_paulo_sp" />
 
     <TextView
-        android:id="@+id/txt_city_name"
+        android:id="@+id/txt_trip_local"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
         android:textSize="@dimen/text_extra_large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,36 +33,38 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="@dimen/text_large"
-        app:layout_constraintStart_toStartOf="@+id/txt_city_name"
-        app:layout_constraintTop_toBottomOf="@+id/txt_city_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_trip_local"
+        app:layout_constraintTop_toBottomOf="@+id/txt_trip_local"
         tools:text="2 days" />
 
     <TextView
         android:id="@+id/txt_trip_period"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/txt_trip_price"
         app:layout_constraintStart_toStartOf="@+id/txt_trip_days"
         app:layout_constraintTop_toBottomOf="@+id/txt_trip_days"
         tools:text="08/12 a 10/12 de 2017" />
 
     <TextView
         android:id="@+id/txt_trip_price"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:textAlignment="textEnd"
         android:textColor="@android:color/holo_green_light"
         android:textSize="@dimen/text_large"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_trip_period"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_trip_period"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_trip_period"
         tools:text="R$ 249.99" />
 
     <TextView
-        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Final price:"
+        android:text="@string/final_price"
         app:layout_constraintBottom_toTopOf="@+id/txt_trip_price"
         app:layout_constraintEnd_toEndOf="@+id/txt_trip_price" />
 
@@ -76,7 +76,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_rounded_orange"
-        android:text="Make Payment"
+        android:text="@string/btn_make_payment"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

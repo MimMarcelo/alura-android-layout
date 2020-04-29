@@ -5,17 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 
 import com.mimmarcelo.aluraviagens.R;
 import com.mimmarcelo.aluraviagens.model.Trip;
-import com.mimmarcelo.aluraviagens.ui.activity.TripListActivity;
 import com.mimmarcelo.aluraviagens.ui.holder.TripHolder;
 
-import java.text.NumberFormat;
 import java.util.List;
-import java.util.Locale;
-import java.util.zip.Inflater;
 
 public class TripsAdapter extends BaseAdapter {
     private final Context context;

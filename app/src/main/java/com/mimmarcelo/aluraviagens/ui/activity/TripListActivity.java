@@ -1,15 +1,15 @@
 package com.mimmarcelo.aluraviagens.ui.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.mimmarcelo.aluraviagens.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.mimmarcelo.aluraviagens.M;
+import com.mimmarcelo.aluraviagens.R;
 import com.mimmarcelo.aluraviagens.dao.TripsDAO;
 import com.mimmarcelo.aluraviagens.model.Trip;
 import com.mimmarcelo.aluraviagens.ui.adapter.TripsAdapter;
