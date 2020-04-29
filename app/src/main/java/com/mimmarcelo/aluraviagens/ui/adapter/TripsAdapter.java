@@ -20,12 +20,10 @@ import java.util.zip.Inflater;
 public class TripsAdapter extends BaseAdapter {
     private final Context context;
     private final List<Trip> trips;
-    private final NumberFormat numberFormat;
 
     public TripsAdapter(Context context, List<Trip> trips) {
         this.context = context;
         this.trips = trips;
-        this.numberFormat = NumberFormat.getCurrencyInstance(new Locale("pt", "br"));
     }
 
     @Override
@@ -55,18 +53,11 @@ public class TripsAdapter extends BaseAdapter {
             holder = (TripHolder) view.getTag();
         }
         Trip trip = trips.get(position);
-        int identifier = context.getResources().getIdentifier(trip.getImage(), "drawable", context.getPackageName());
-        holder.image.setImageResource(identifier);
-
+        holder.image.setImageResource(trip.getImageResource(context));
         holder.local.setText(trip.getLocal());
+        holder.days.setText(trip.getDaysResource());
+        holder.price.setText(trip.getPriceResource());
 
-        String days = " days";
-        if(trip.getDays() == 1){
-            days = " day";
-        }
-        holder.days.setText(trip.getDays() + days);
-
-        holder.price.setText(numberFormat.format(trip.getPrice()).replace("R$", "R$ "));
         return view;
     }
 }
