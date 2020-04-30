@@ -20,5 +20,10 @@
     <string name="hint_credit_card_year">YY</string>
     <string name="hint_cvc">CVC</string>
     <string name="hint_name_in_credit_card">Name in Credit Card</string>
-    <string name="btn_finish_payment">Finish Payment</string>
+    <string name="btn_finish_payment">Pruchase</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="purchase_with_success">Purchase with success!</string>
+    <string name="check_purchase_resume">Check your purchase resume</string>
+    <string name="header_of_purchase_resume_activity">Purchase Resume</string>
+    <string name="btn_back_to_list">Back to List</string>
 </resources>

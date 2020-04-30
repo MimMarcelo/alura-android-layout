@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.PaymentActivity"></activity>
+        <activity android:name=".ui.activity.PurchaseResumeActivity"></activity>
+        <activity android:name=".ui.activity.PurchaseActivity" />
         <activity android:name=".ui.activity.TripResumeActivity" />
         <activity android:name=".ui.activity.TripListActivity">
             <intent-filter>
