@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MIM: Alura Trips</string>
-    <string name="header_list_trips_activity">Specials</string>
+    <string name="header_of_list_trips_activity">Specials</string>
+    <string name="header_of_resume_activity">Trip Resume</string>
+    <string name="header_of_payment_activity">Payment</string>
     <string name="brazil">Brazil</string>
     <string name="banner_background_image_description">Banner background image</string>
     <string name="city_sao_paulo">São Paulo</string>
@@ -8,8 +10,15 @@
     <string name="trip_days">2 days</string>
     <string name="trip_price">R$ 233.99</string>
     <string name="trip_list_header">Trips</string>
-    <string name="header_of_resume_activity">Trip Resume</string>
     <string name="illustrative_image_from_city">Illustrative image from city</string>
     <string name="final_price">Final price:</string>
     <string name="btn_make_payment">Make Payment</string>
+    <string name="explanation_at_payment_activity">Type the credit card informations you wish to use for payment</string>
+    <string name="total_price">Total price:</string>
+    <string name="hint_credit_card_number">Credit Card Number</string>
+    <string name="hint_credit_card_month">MM</string>
+    <string name="hint_credit_card_year">YY</string>
+    <string name="hint_cvc">CVC</string>
+    <string name="hint_name_in_credit_card">Name in Credit Card</string>
+    <string name="btn_finish_payment">Finish Payment</string>
 </resources>

@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_large"
         android:layout_marginTop="@dimen/margin_large"
-        android:text="@string/header_list_trips_activity"
+        android:text="@string/header_of_list_trips_activity"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_extra_large"
         app:layout_constraintStart_toStartOf="parent"
